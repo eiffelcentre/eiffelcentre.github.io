@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eiffel Language Centre — Landing</title>
+  <style>
+    :root {
+      --deep-blue: #0b32d6;
+      --accent-orange: #ff9b57;
+      --card-blue: #2b7ff0;
+      --card-red: #f24f4f;
+      --card-green: #6bd08c;
+      --muted: #fbf6f4;
+      --dark: #111;
+      font-family: 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--muted); color: var(--dark); }
+
+    .page { max-width: 1000px; margin: 20px auto; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+
+    .hero { display: flex; align-items: center; gap: 30px; background: var(--deep-blue); color: white; padding: 28px; border-bottom-left-radius: 36px; border-bottom-right-radius: 36px; }
+    .logo-wrap { width: 150px; height: 150px; background: #fff; border-radius: 22px; padding: 10px; display: flex; align-items: center; justify-content: center; }
+    .logo { width: 100%; height: 100%; object-fit: contain; border-radius: 12px; background: #ccc; }
+
+    .hero-content { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+    .tagline { font-weight: 600; background: rgba(255,255,255,.08); display: inline-block; padding: 8px 12px; border-radius: 12px; }
+    .pill { background: #ff8f3c; padding: 8px 12px; border-radius: 20px; font-weight: 700; }
+    .small-pill { background: rgba(255,255,255,.12); padding: 6px 10px; border-radius: 16px; }
+
+    .section { padding: 40px 48px; }
+    .section h2 { margin: 0 0 18px 0; font-size: 22px; }
+
+    .services { display: flex; gap: 18px; }
+    .service-card { flex: 1; border-radius: 14px; padding: 18px; color: white; min-height: 160px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 6px 16px rgba(0,0,0,.06); }
+    .service-card .placeholder { width: 100%; height: 80px; border-radius: 10px; background: #ddd; display: flex; align-items: center; justify-content: center; color: #555; font-weight: bold; }
+
+    .card-blue { background: linear-gradient(180deg,#2b7ff0,#1f69d9); }
+    .card-red { background: linear-gradient(180deg,#f24f4f,#e53b3b); }
+    .card-green { background: linear-gradient(180deg,#6bd08c,#52b36f); }
+
+    .why { background: var(--accent-orange); padding: 30px; border-radius: 12px; margin-top: 28px; display: flex; gap: 20px; }
+    .why .right .placeholder { width: 300px; height: 200px; border-radius: 10px; background: #ddd; display: flex; align-items: center; justify-content: center; color: #555; font-weight: bold; }
+
+    .other-services { display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+    .mini { flex: 1; min-width: 140px; padding: 14px; border-radius: 12px; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.04); text-align: center; }
+
+    .resources { background: #2d66ff; padding: 18px; color: #fff; border-radius: 8px; margin-top: 28px; }
+    .resources .inner { display: flex; gap: 18px; align-items: center; }
+    .resources .placeholder { width: 150px; height: 120px; border-radius: 8px; background: #ddd; display: flex; align-items: center; justify-content: center; color: #555; font-weight: bold; }
+
+    .needs { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 18px; }
+    .need { background: #fff; border-radius: 12px; padding: 14px; min-width: 160px; box-shadow: 0 6px 18px rgba(0,0,0,.04); }
+
+    .contact { padding: 36px; background: linear-gradient(90deg,#26c6ff,#1e88e5); color: #fff; text-align: center; }
+    .contact .email { display: inline-block; background: rgba(255,255,255,.12); padding: 10px 18px; border-radius: 20px; margin-bottom: 12px; }
+
+    @media (max-width:900px){
+      .hero { flex-direction: column; align-items: flex-start; }
+      .services { flex-direction: column; }
+      .why { flex-direction: column; }
+      .logo-wrap { width: 120px; height: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="logo-wrap">
+        <div class="logo">LOGO</div>
+      </div>
+      <div class="hero-content">
+        <div class="tagline">Words unlock the world !<br><small>Clé de mots clé du monde !</small></div>
+        <h1>Eiffel Language Centre</h1>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:6px">
+          <div class="pill">November 3, 2023</div>
+          <div class="small-pill">French, English & Swahili services</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>OUR SERVICES</h2>
+      <div class="services">
+        <div class="service-card card-blue">
+          <div class="placeholder">Image Placeholder</div>
+          <h3>Language Coaching</h3>
+          <p>Enhance your language skills with personalised lessons and practical exercises.</p>
+        </div>
+        <div class="service-card card-red">
+          <div class="placeholder">Image Placeholder</div>
+          <h3>Interpretation Services</h3>
+          <p>Professional interpreters for events, meetings and conferences — accurate, timely, confidential.</p>
+        </div>
+        <div class="service-card card-green">
+          <div class="placeholder">Image Placeholder</div>
+          <h3>Translation Services</h3>
+          <p>Certified translation of documents across multiple languages with quality assurance.</p>
+        </div>
+      </div>
+
+      <div class="why">
+        <div class="left">
+          <h3>WHY CHOOSE US</h3>
+          <ul>
+            <li>Experienced instructors with real-world expertise</li>
+            <li>Tailored programs designed for individual needs</li>
+            <li>Flexible schedules to fit your lifestyle</li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="placeholder">Image Placeholder</div>
+        </div>
+      </div>
+
+      <h3>OTHER SERVICES</h3>
+      <div class="other-services">
+        <div class="mini" style="background:#f66;color:#fff;">Language Assessment</div>
+        <div class="mini" style="background:#4a90e2;color:#fff;">Language Resources</div>
+        <div class="mini" style="background:#4cd97b;color:#fff;">Transcription & Subtitles</div>
+        <div class="mini" style="background:#ffbf69;">Training for Groups</div>
+        <div class="mini" style="background:#8be0ff;">Curriculum Development</div>
+      </div>
+
+      <div class="resources">
+        <div class="inner">
+          <div class="placeholder">Image Placeholder</div>
+          <div>
+            <h3>LANGUAGE RESOURCES</h3>
+            <ul>
+              <li>Comprehensive language textbooks</li>
+              <li>Interactive online learning modules</li>
+              <li>Engaging multimedia tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3>OTHER NEEDS</h3>
+      <div class="needs">
+        <div class="need">Language Guides & Assistants</div>
+        <div class="need">Editing & Proofreading</div>
+        <div class="need">Promotional products</div>
+        <div class="need">Event booking & tailored course options</div>
+      </div>
+    </section>
+
+    <footer class="contact">
+      <h2>Get in Touch</h2>
+      <p>Reach out for any inquiries</p>
+      <div class="email">centreiffel@gmail.com</div>
+      <p>Phone: +254724352807</p>
+    </footer>
+  </div>
+</body>
+</html>
